@@ -72,8 +72,8 @@ const casesadherence = () => {
     // Cria um elemento 'div' para ser o redimensionador
     const resizer = document.createElement('div');
     resizer.className = 'resizer'; // Define uma classe para o redimensionador (pode ser estilizado usando CSS)
-    resizer.style.width = '10px'; // Define a largura do redimensionador
-    resizer.style.height = '10px'; // Define a altura do redimensionador
+    resizer.style.width = '25px'; // Define a largura do redimensionador
+    resizer.style.height = '25px'; // Define a altura do redimensionador
     resizer.style.background = 'none'; // Define o plano de fundo do redimensionador (pode ser estilizado com cores)
     resizer.style.position = 'absolute'; // Define a posição como absoluta
     resizer.style.right = 0; // Alinha o redimensionador à direita

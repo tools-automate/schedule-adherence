@@ -17,7 +17,7 @@
 /* Corpo do adherence */
 #adherence {
   background-color: var(--color-white);
-  position: absolute;
+  position: fixed;
   z-index: 10000;
   top: 10px;
   left: 10px;
@@ -153,12 +153,10 @@
 #adherence > .all-content {
   max-height: calc(100% - 77px);
   height: 100%;
-  padding: 10px;
 }
 
 #adherence > .all-content > [id^='content-'] {
   height: 100%;
-  overflow: auto;
   background-color: var(--color-white);
 }
 
