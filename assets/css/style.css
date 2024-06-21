@@ -1,5 +1,5 @@
 /* Reset css */
-#escala *:not(.material-icons) {
+#adherence *:not(.material-icons) {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -14,8 +14,8 @@
   --color-bar-button-hover: #3684eb;
 }
 
-/* Corpo do escala */
-#escala {
+/* Corpo do adherence */
+#adherence {
   background-color: var(--color-white);
   position: absolute;
   z-index: 10000;
@@ -30,19 +30,19 @@
 }
 
 /*Dark theme*/
-#escala.dark-theme:not(#escala.escala-minimize) {
+#adherence.dark-theme:not(#adherence.adherence-minimize) {
   filter: invert(1);
 }
-#escala.dark-theme #escalamoove,
-#escala.dark-theme #abas,
-#escala.dark-theme .button-success,
-#escala.dark-theme .button-reset,
-#escala.dark-theme .buttons-blue,
-#escala.dark-theme .icons {
+#adherence.dark-theme #adherencemoove,
+#adherence.dark-theme #abas,
+#adherence.dark-theme .button-success,
+#adherence.dark-theme .button-reset,
+#adherence.dark-theme .buttons-blue,
+#adherence.dark-theme .icons {
   filter: invert(1) !important;
 }
 /* Estilos para a caixa de notas minimizada */
-#escala.escala-minimize {
+#adherence.adherence-minimize {
   position: fixed !important;
   width: 0 !important;
   height: 0 !important;
@@ -50,8 +50,8 @@
 }
 
 /* Ícone dentro da caixa de notas minimizada */
-#escala.escala-minimize::before {
-  content: 'schedule';
+#adherence.adherence-minimize::before {
+  content: 'autorenew';
   box-shadow: -1px -1px 4px 1px #a1a1a1;
   font-size: 40px;
   color: #fff;
@@ -70,18 +70,18 @@
   transition: opacity 0.3s ease;
 }
 
-#escala .hide {
+#adherence .hide {
   display: none;
   /* Oculta as abas */
 }
-#escala .show {
+#adherence .show {
   display: block;
   /* Exibe a aba */
 }
 
 /* Buttons styles */
-#escala .button-success,
-#escala .button-reset {
+#adherence .button-success,
+#adherence .button-reset {
   font-size: 13pt;
   padding: 10px;
   margin-left: 5px;
@@ -91,78 +91,78 @@
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out; /* Ajuste da transição para torná-la mais suave */
 }
-#escala .button-success {
+#adherence .button-success {
   background-color: var(--color-bar-button);
 }
-#escala .button-reset {
+#adherence .button-reset {
   background-color: #e8776e;
 }
-#escala .button-success:hover,
-#escala .button-reset:hover {
+#adherence .button-success:hover,
+#adherence .button-reset:hover {
   filter: brightness(125%); /* Adição de um leve efeito de brilho ao passar o mouse */
 }
 
-#escala > #escalamoove,
-#escala > #abas {
+#adherence > #adherencemoove,
+#adherence > #abas {
   color: var(--color-white);
   background-color: var(--color-bar-button);
   display: flex;
 }
 
-#escala > #escalamoove {
+#adherence > #adherencemoove {
   font-size: 15pt;
   align-items: center;
   padding: 10px;
   cursor: move;
 }
 
-#escala > #escalamoove > span:last-child {
+#adherence > #adherencemoove > span:last-child {
   margin-right: 10px;
   margin-left: auto;
 }
 
-#escala > #escalamoove > span:last-child > * {
+#adherence > #adherencemoove > span:last-child > * {
   border-radius: 50%;
   padding: 10px;
   transition: background 0.3s ease;
 }
 
 /*Bolha hover*/
-#escala > #escalamoove > span:last-child > *:hover {
+#adherence > #adherencemoove > span:last-child > *:hover {
   background-color: #fdfdfd36;
   padding: 10px;
 }
 
 /* Estilos para as abas */
-#escala > #abas > [data-abas] {
+#adherence > #abas > [data-abas] {
   display: inline-block;
   padding: 5px 10px;
   border-bottom: 4px solid transparent;
   transition: border-color 0.3s ease, background 0.3s ease;
 }
 
-#escala > #abas > [data-abas]:hover {
+#adherence > #abas > [data-abas]:hover {
   border-bottom-color: #b6b6b6;
   background-color: var(--color-bar-button-hover);
 }
-#escala > #abas > .highlight {
+#adherence > #abas > .highlight {
   border-bottom: 4px solid var(--color-white) !important;
   transition: border-color 0.3s ease;
 }
 
-#escala > .all-content {
+#adherence > .all-content {
   max-height: calc(100% - 77px);
   height: 100%;
   padding: 10px;
 }
 
-#escala > .all-content > [id^='content-'] {
+#adherence > .all-content > [id^='content-'] {
   height: 100%;
   overflow: auto;
   background-color: var(--color-white);
 }
 
-#escala > .all-content > [id^='content-'] > .card {
+#adherence > .all-content > [id^='content-'] > .card {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -173,7 +173,7 @@
   padding-bottom: 10px;
 }
 
-#escala > .all-content > [id^='content-'] > .card > .label-card {
+#adherence > .all-content > [id^='content-'] > .card > .label-card {
   border-bottom: 1px solid #dee0e4;
   cursor: default;
   display: flex;
@@ -186,16 +186,16 @@
   justify-content: flex-start;
 }
 
-#escala > .all-content > [id^='content-'] > .card > .label-card ~ * {
+#adherence > .all-content > [id^='content-'] > .card > .label-card ~ * {
   padding: 9px;
 }
-#escala > .all-content > [id^='content-'] > .card > .label-card ~ div > p,
-#escala > .all-content > [id^='content-'] > .card > .label-card ~ div > p * {
+#adherence > .all-content > [id^='content-'] > .card > .label-card ~ div > p,
+#adherence > .all-content > [id^='content-'] > .card > .label-card ~ div > p * {
   padding: 5px;
 }
 
-#escala > .all-content > [id^='content-'] > .card > .label-card ~ *,
-#escala > .all-content > [id^='content-'] > .card > .label-card ~ div > p > label > input {
+#adherence > .all-content > [id^='content-'] > .card > .label-card ~ *,
+#adherence > .all-content > [id^='content-'] > .card > .label-card ~ div > p > label > input {
   outline: none;
   border: none;
   border-bottom: 3px solid #e5e6e9;
@@ -204,36 +204,36 @@
   background-color: var(--color-white);
 }
 
-#escala > .all-content > [id^='content-'] > .card > .label-card ~ *:focus,
-#escala > .all-content > [id^='content-'] > .card > .label-card ~ div > p > label > input:focus {
+#adherence > .all-content > [id^='content-'] > .card > .label-card ~ *:focus,
+#adherence > .all-content > [id^='content-'] > .card > .label-card ~ div > p > label > input:focus {
   border-bottom-color: var(--color-bar-button);
 }
 
-#escala > .all-content > [id^='content-'] > [id^='buttons'] > hotkey,
-#escala > .all-content > [id^='content-'] > [id^='buttons'] > p {
+#adherence > .all-content > [id^='content-'] > [id^='buttons'] > hotkey,
+#adherence > .all-content > [id^='content-'] > [id^='buttons'] > p {
   border: none !important;
 }
 
-#escala > .all-content > [id^='content-'] > [id^='buttons'] > p {
+#adherence > .all-content > [id^='content-'] > [id^='buttons'] > p {
   display: flex !important;
   flex-flow: column/nowrap !important;
   justify-content: flex-end !important;
 }
 
-#escala > .all-content > [id^='content-'] > div > div > p > label > input {
+#adherence > .all-content > [id^='content-'] > div > div > p > label > input {
   max-width: 70% !important;
   display: inline !important;
   outline: none;
   padding: 5px;
 }
 
-#escala > .all-content > [id^='content-'] > div > .email-automtizado > p {
+#adherence > .all-content > [id^='content-'] > div > .email-automtizado > p {
   display: flex;
   align-items: center;
   padding: 5px 20px;
 }
 
-#escala > .all-content > [id^='content-'] > div > .label-card > .icons {
+#adherence > .all-content > [id^='content-'] > div > .label-card > .icons {
   background-color: var(--color-bar-button);
   padding: 8px;
   color: var(--color-white);
@@ -241,42 +241,42 @@
   margin-right: 5px;
 }
 
-#escala > .all-content > [id^='content-'] > div > .email-automtizado > p > [data-email] {
+#adherence > .all-content > [id^='content-'] > div > .email-automtizado > p > [data-email] {
   color: var(--color-bar-button);
   padding: 0 5px;
 
   transition: color 0.5s ease-out;
 }
 
-#escala > .all-content > [id^='content-'] > div > .email-automtizado > p > [data-email]:hover {
+#adherence > .all-content > [id^='content-'] > div > .email-automtizado > p > [data-email]:hover {
   color: #e8776e;
 }
 
-#escala > .all-content > [id^='content-'] > div > .email-automtizado > p > [data-email]:active {
+#adherence > .all-content > [id^='content-'] > div > .email-automtizado > p > [data-email]:active {
   color: #34a853;
 }
 
-#escala > .all-content > [id^='content-'] > div > #horarios-disponiveis > p {
+#adherence > .all-content > [id^='content-'] > div > #horarios-disponiveis > p {
   padding: 10px;
 }
 
-#escala > .all-content > [id^='content-'] > div > #horarios-disponiveis > p:hover,
-#escala > .all-content > [id^='content-'] > div > #link-content > ul > li:hover {
+#adherence > .all-content > [id^='content-'] > div > #horarios-disponiveis > p:hover,
+#adherence > .all-content > [id^='content-'] > div > #link-content > ul > li:hover {
   background-color: #d8d8d8;
 }
-#escala > .all-content > [id^='content-'] > div > #alert-content > div > h2 {
+#adherence > .all-content > [id^='content-'] > div > #alert-content > div > h2 {
   padding: 10px;
 }
-#escala > .all-content > [id^='content-'] > div > #link-content > ul {
+#adherence > .all-content > [id^='content-'] > div > #link-content > ul {
   list-style: none;
 }
-#escala > .all-content > [id^='content-'] > div > #link-content > ul > li > a {
+#adherence > .all-content > [id^='content-'] > div > #link-content > ul > li > a {
   padding: 10px;
   display: block;
   text-decoration: none;
   color: #000;
 }
-#escala .popup-alert-father {
+#adherence .popup-alert-father {
   z-index: 1000000;
   position: fixed;
   top: 0;
@@ -286,7 +286,7 @@
   background-color: #b8b8b83d;
 }
 /* Style the popup */
-#escala .popup-alert {
+#adherence .popup-alert {
   z-index: 100000000;
   display: flex;
   flex-direction: column;
@@ -300,25 +300,25 @@
   border-radius: 10px;
   box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.137);
 }
-#escala .popup-alert > div > * {
+#adherence .popup-alert > div > * {
   padding: 10px;
 }
-#escala .popup-alert > div > * p {
+#adherence .popup-alert > div > * p {
   font-size: 15pt;
   padding: 5px 0;
 }
-#escala .popup-alert > div > h2 {
+#adherence .popup-alert > div > h2 {
   font-weight: 700;
   display: flex;
   align-items: center;
 }
-#escala .popup-alert > div > h2 > span {
+#adherence .popup-alert > div > h2 > span {
   color: #e8c21a;
   margin-left: 5px;
   font-size: 50px;
 }
 
-#escala .buttons-blue {
+#adherence .buttons-blue {
   color: var(--color-bar-button);
   font-weight: 700;
   font-size: 10pt;
@@ -328,7 +328,7 @@
   transition: background 0.3s ease;
 }
 
-#escala .buttons-blue:hover {
+#adherence .buttons-blue:hover {
   background-color: #e2eefd;
 }
 
@@ -380,24 +380,24 @@
 }
 
 /*Hotkey e idioma*/
-#escala hotkey > h3 {
+#adherence hotkey > h3 {
   padding: 10px 0 !important;
 }
 
 /*Cursor poiter*/
-#escala.escala-minimize::before,
-#escala .button-success,
-#escala .button-reset,
-#escala > #escalamoove > span:nth-child(3),
-#escala > #escalamoove > span:last-child,
-#escala > #abas > [data-abas],
-#escala > .all-content > [id^='content-'] > div > div > p > input,
-#escala > .all-content > [id^='content-'] > div > div > p > label,
-#escala #hotkey-agendamento,
-#escala > .all-content > [id^='content-'] > div > .email-automtizado > p > [data-email],
-#escala > .all-content > [id^='content-'] > div > #horarios-disponiveis > p,
-#escala > .all-content > [id^='content-'] > div > span > #refreshCalendar,
-#escala .buttons-blue,
+#adherence.adherence-minimize::before,
+#adherence .button-success,
+#adherence .button-reset,
+#adherence > #adherencemoove > span:nth-child(3),
+#adherence > #adherencemoove > span:last-child,
+#adherence > #abas > [data-abas],
+#adherence > .all-content > [id^='content-'] > div > div > p > input,
+#adherence > .all-content > [id^='content-'] > div > div > p > label,
+#adherence #hotkey-agendamento,
+#adherence > .all-content > [id^='content-'] > div > .email-automtizado > p > [data-email],
+#adherence > .all-content > [id^='content-'] > div > #horarios-disponiveis > p,
+#adherence > .all-content > [id^='content-'] > div > span > #refreshCalendar,
+#adherence .buttons-blue,
 #speakeasy-id-container > p > .speakeasy-id,
 #speakeasy-id-container > button {
   cursor: pointer;
