@@ -158,13 +158,13 @@
 #adherence > .all-content > [id^='content-'] {
   height: 100%;
   background-color: var(--color-white);
+  padding: 20px;
 }
 
 #adherence > .all-content > [id^='content-'] > .card {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  overflow: hidden;
   border: 1px solid #dee0e4;
   border-radius: 10px;
   margin-bottom: 10px;
