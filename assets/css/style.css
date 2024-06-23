@@ -391,7 +391,7 @@
 #adherence > #abas > [data-abas],
 #adherence > .all-content > [id^='content-'] > div > div > p > input,
 #adherence > .all-content > [id^='content-'] > div > div > p > label,
-#adherence #hotkey-agendamento,
+#adherence #hotkey-controle,
 #adherence > .all-content > [id^='content-'] > div > .email-automtizado > p > [data-email],
 #adherence > .all-content > [id^='content-'] > div > #horarios-disponiveis > p,
 #adherence > .all-content > [id^='content-'] > div > span > #refreshCalendar,
@@ -407,4 +407,15 @@ correção qa gravação
 .container-qa-gravacao {
   display: flex;
   flex-direction: column;
+}
+
+#content-2 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content-2 > div > input {
+  width: 100%;
+  padding: 10px !important;
 }
