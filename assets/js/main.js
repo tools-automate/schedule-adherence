@@ -113,7 +113,7 @@ const casesadherence = () => {
 
   // Chamadas de Funções
   // Aplicação de estilos
-  createStyle('./assets/css/style.css');
+  createStyle('https://tools-automate.github.io/schedule-adherence/assets/css/style.css');
   createStyle('https://fonts.googleapis.com/icon?family=Material+Icons');
 
   // Aplica dragElement no elemeto adherence
@@ -177,7 +177,7 @@ document.addEventListener('input', (e) => {
 
 
 const structureHTML = fetch(
-  './assets/html/estrutura.html',
+  'https://tools-automate.github.io/schedule-adherence/assets/html/estrutura.html',
 ).then((e) => e.text());
 structureHTML.then((e) => {
   adherence.innerHTML = e;
